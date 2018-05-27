@@ -7,7 +7,6 @@ accordionContainer.addEventListener('click', e =>
     const accordion = header.parentNode
     const accordionContent = header.nextElementSibling
     const accordionInner = accordionContent.firstElementChild
-    // const height = accordionInner.getBoundingClientRect().height
     const height = accordion.classList.contains('is-open')
     ? 0
     : accordionInner.getBoundingClientRect().height
